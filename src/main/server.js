@@ -10,9 +10,10 @@
 
     sequelize.sync().then(() => {
         console.log('Auth DB ready!');
+        
     });
     
-    const PORT = process.env.PORT || 3001;
+    const PORT = process.env.PORT || 3008;
     app.listen(PORT, () => console.log(`Auth service running on port ${PORT}`));
 
   
